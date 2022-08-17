@@ -9,6 +9,8 @@ if(c.aws_profile !== "DEPLOYED") {
  AWS.config.credentials = credentials;
 }
 
+
+
 export const s3 = new AWS.S3({
   signatureVersion: 'v4',
   region: c.aws_region,
